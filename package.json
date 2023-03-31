@@ -1,0 +1,19 @@
+{
+  "name": "keystone-app",
+  "version": "1.0.2",
+  "private": true,
+  "scripts": {
+    "build": "keystone build",
+    "dev": "keystone dev",
+    "postinstall": "keystone postinstall",
+    "generate": "keystone prisma migrate dev",
+    "start": "keystone start --with-migrations",
+    "deploy": "keystone build && keystone prisma migrate deploy"
+  },
+  "dependencies": {
+    "@keystone-6/auth": "^7.0.0",
+    "@keystone-6/core": "^5.0.0",
+    "@keystone-6/fields-document": "^7.0.0",
+    "typescript": "^4.9.5"
+  }
+}
